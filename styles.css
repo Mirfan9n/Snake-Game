@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url(snake.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(200, 222, 74) ,rgb(143, 226, 198));
+    height: 92vmin;
+    width: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18 , 1fr);
+    grid-template-columns: repeat(18 , 1fr);
+}
+#hiscoreBox{
+    position: absolute;
+    top: 70px;
+    right: 152px;
+    font-weight: bold;
+    font-size: 39px;
+    font-family: 'Bruno Ace SC', cursive;
+
+}
+
+#scoree{
+    position: absolute;
+    top: 20px;
+    right: 173px;
+    font-weight: bold;
+    font-size: 39px;
+    font-family: 'Bruno Ace SC', cursive;
+
+}
+
+.head{
+    background: linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 15px;
+}
+.snake{
+    
+    background: linear-gradient(rgb(35, 36, 33) , rgb(204, 138, 205));
+    border: .25vmin solid white;
+    border-radius: 20px;
+}
+.food{
+    background: linear-gradient(rgb(214, 103, 103) , rgb(66, 65, 65));
+    border: .25vmin solid yellowgreen;
+    border-radius: 10px;
+}
